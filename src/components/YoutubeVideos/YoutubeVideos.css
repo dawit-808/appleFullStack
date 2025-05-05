@@ -1,0 +1,37 @@
+.card {
+  background-color: #111;
+  color: #f1f1f1;
+  border: 1px solid #222;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid #333;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f9f9f9;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.text-muted {
+  font-size: 0.85rem;
+  color: #888 !important;
+}
