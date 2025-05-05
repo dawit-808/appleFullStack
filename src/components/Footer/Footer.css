@@ -1,0 +1,163 @@
+/* Footer.css */
+
+.footer-wrapper {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+
+.footer-wrapper ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-wrapper a {
+  color: #515154;
+  text-decoration: none;
+}
+
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.upper-text-container {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 17px 0 10px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.footer-links-wrapper {
+  margin-bottom: 20px;
+}
+
+.links-wrapper-1,
+.links-wrapper-2,
+.links-wrapper-3,
+.links-wrapper-4,
+.links-wrapper-5 {
+  margin-bottom: 20px;
+}
+
+.footer-links-wrapper ul li {
+  padding: 4px 0;
+}
+
+.my-apple-wrapper {
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.copyright-wrapper {
+  padding: 10px 0;
+  align-items: center;
+}
+
+.footer-links-terms ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.footer-links-terms ul li {
+  padding: 0;
+  border-right: 1px solid #d2d2d7;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.footer-links-terms ul li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.footer-country {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flag-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.flag-wrapper img {
+  width: 16px;
+  height: auto;
+}
+
+.footer-country-name {
+  display: inline-flex;
+}
+
+@media (max-width: 767.98px) {
+  .footer-wrapper {
+    font-size: 11px;
+  }
+
+  .footer-links-wrapper > div {
+    margin-bottom: 0;
+  }
+
+  .footer-links-wrapper h3 {
+    padding: 12px 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d7;
+  }
+
+  .footer-links-wrapper h3::after {
+    content: "+";
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-links-wrapper h3.active::after {
+    content: "-";
+  }
+
+  .footer-links-wrapper ul {
+    display: none;
+    padding-bottom: 12px;
+  }
+
+  .footer-links-terms ul {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .footer-country {
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .copyright {
+    margin-top: 15px;
+  }
+
+  .upper-text-container {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}

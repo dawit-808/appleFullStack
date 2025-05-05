@@ -1,0 +1,15 @@
+nav {
+  font-size: small;
+  font-weight: 100;
+  opacity: 0.8;
+  background-color: transparent;
+  background-color: #2d2d2d;
+}
+
+.white-icon {
+  color: #ffffff;
+}
+
+.menu {
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+/* Section3.css */
+
+.section3 {
+  height: 650px;
+  background-image: url("../../assets/home/watch-mobile.png");
+  background-size: auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin: 10px 0;
+}
+
+.watch-logo {
+  width: 18vw;
+  margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+  .section3 {
+    background-image: url("../../assets/home/watch.jpg");
+    background-size: cover;
+  }
+}

@@ -1,0 +1,46 @@
+/* cards section */
+.card {
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intel {
+  background: linear-gradient(90deg, #098ef8, #a56eff, #ff5db1, #ff7b3e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card1 {
+  background-image: url("../../assets/home/announce.jpg");
+}
+
+.card2 {
+  background-image: url("../../assets/home/mac.jpg");
+}
+
+.card3 {
+  background-image: url("../../assets/home/ipad-mobile.jpg");
+}
+
+.card4 {
+  background-image: url("../../assets/home/baseball.jpg");
+}
+
+.card5 {
+  background-image: url("../../assets/home/trade.jpg");
+}
+
+.card6 {
+  background-image: url("../../assets/home/card.jpg");
+}
+@media (min-width: 720px) {
+  .cards p {
+    font-size: 1.2rem;
+  }
+  .card3 {
+    background-image: url("../../assets/home/ipad.jpg");
+  }
+}

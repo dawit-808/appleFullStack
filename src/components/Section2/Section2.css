@@ -1,0 +1,16 @@
+/* Section2.css */
+
+.section2 {
+  height: 650px;
+  background-image: url("../../assets/home/iphone-16-mobile.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 10px 0;
+}
+
+@media (min-width: 720px) {
+  .section2 {
+    background-image: url("../../assets/home/iphone-16.jpg");
+  }
+}
