@@ -1,0 +1,42 @@
+.single-product-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.single-product-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.single-product-image {
+  max-height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.single-product-description {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.single-product-price {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 20px;
+}
+
+.single-product-price span {
+  color: #777;
+  font-size: 1rem;
+}

@@ -2,6 +2,7 @@ const express = require("express");
 const mysql = require("mysql2");
 const port = 3000;
 const app = express();
+var cors = require("cors");
 app.use(express.urlencoded({ extended: true }));
 const db = mysql.createConnection({
   database: "mydb",
@@ -11,6 +12,7 @@ const db = mysql.createConnection({
 });
 
 app.use(express.json());
+app.use(cors());
 
 db.connect((err) => {
   if (err) console.log(err.message);
@@ -144,7 +146,7 @@ app.post("/addProducts", (req, res) => {
   });
 });
 
-app.get("/products", (req, res) => {
+app.get("/iphones", (req, res) => {
   const query = `
     SELECT 
       p.product_id,
@@ -167,6 +169,37 @@ app.get("/products", (req, res) => {
   db.query(query, (err, results) => {
     if (err) return console.log(err.message);
     res.json(results);
+  });
+});
+
+app.get("/iphones/:id", (req, res) => {
+  const productId = req.params.id;
+
+  const query = `
+    SELECT 
+      p.product_id,
+      p.product_name,
+      p.product_url,
+      d.product_brief_description,
+      d.product_description,
+      d.product_img,
+      d.product_link,
+      pr.starting_price,
+      pr.price_range,
+      u.user_name
+    FROM products p
+    JOIN descriptions d ON p.product_id = d.product_id
+    JOIN price pr ON p.product_id = pr.product_id
+    JOIN orders o ON p.product_id = o.product_id
+    JOIN users u ON o.user_id = u.user_id
+    WHERE p.product_id = ?
+  `;
+
+  db.query(query, [productId], (err, results) => {
+    if (err) return res.status(500).json({ error: err.message });
+    if (results.length === 0)
+      return res.status(404).json({ error: "Product not found" });
+    res.json(results[0]);
   });
 });
 

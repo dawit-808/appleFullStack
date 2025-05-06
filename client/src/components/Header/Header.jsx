@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -6,9 +7,9 @@ function Header() {
     <>
       <nav className="navbar navbar-expand-md navbar-light fixed-top p-1 text-white">
         <div className="container-fluid">
-          <a className="navbar-brand d-md-none text-white" href="#">
+          <Link className="navbar-brand d-md-none text-white" to="/">
             <i className="fa-brands fa-apple"></i>
-          </a>
+          </Link>
 
           <div className="d-md-none d-flex align-items-center ms-auto gap-5">
             <i className="fa-solid fa-magnifying-glass"></i>
@@ -21,76 +22,76 @@ function Header() {
           <div className="collapse navbar-collapse justify-content-center">
             <ul className="navbar-nav gap-3">
               <li className="nav-item apple-logo d-none d-md-flex">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="/">
                   <i className="fa-brands fa-apple"></i>
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="store">
                   Store
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="mac">
                   Mac
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="ipad">
                   iPad
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="iphone">
                   iPhone
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="watch">
                   Watch
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="vision">
                   Vision
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="airpods">
                   AirPods
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="tv">
                   TV & Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="entertainment">
                   Entertainment
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="accessories">
                   Accessories
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="support">
                   Support
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item d-none d-md-block">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="#">
                   <i className="fa-solid fa-magnifying-glass white-icon"></i>
-                </a>
+                </Link>
               </li>
               <li className="nav-item d-none d-md-block">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="#">
                   <i className="fa-regular fa-bookmark white-icon"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
