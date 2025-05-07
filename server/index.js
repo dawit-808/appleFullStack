@@ -146,7 +146,7 @@ app.post("/addProducts", (req, res) => {
   });
 });
 
-app.get("/iphones", (req, res) => {
+app.get("/iphone", (req, res) => {
   const query = `
     SELECT 
       p.product_id,
@@ -172,7 +172,7 @@ app.get("/iphones", (req, res) => {
   });
 });
 
-app.get("/iphones/:id", (req, res) => {
+app.get("/iphone/:id", (req, res) => {
   const productId = req.params.id;
 
   const query = `
