@@ -11,12 +11,10 @@ function SingleProduct() {
     fetch(`http://localhost:3000/iphones/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
-      .catch((err) => console.error(err));
+      .catch((err) => console.log(err));
   }, [id]);
 
-  if (product === null) {
-    return <Four04 />;
-  } else {
+  if (product !== null) {
     return (
       <div className="single-product-container">
         <h1 className="single-product-title">{product.product_name}</h1>
@@ -35,6 +33,8 @@ function SingleProduct() {
         </p>
       </div>
     );
+  } else {
+    return <Four04 />;
   }
 }
 

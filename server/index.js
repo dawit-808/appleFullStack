@@ -196,10 +196,10 @@ app.get("/iphones/:id", (req, res) => {
   `;
 
   db.query(query, [productId], (err, results) => {
-    if (err) return res.status(500).json({ error: err.message });
-    if (results.length === 0)
-      return res.status(404).json({ error: "Product not found" });
+    if (err) return console.log(err.message);
+    if (results.length === 0) return console.log("Product not found");
     res.json(results[0]);
+    console.log(results);
   });
 });
 

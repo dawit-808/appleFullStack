@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Store from "./pages/Store";
 import Mac from "./pages/Mac";
 import Ipad from "./pages/Ipad";
-import Iphone from "./pages/Iphone";
+import Iphone from "./pages/Iphone/Iphone";
 import SingleProduct from "./pages/SingleProduct/SingleProduct";
 import Watch from "./pages/Watch";
 import Vision from "./pages/Vision";

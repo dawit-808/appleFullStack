@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Iphones.css";
+import "./Iphone.css";
 
 function Iphones() {
   const [products, setProducts] = useState([]);
