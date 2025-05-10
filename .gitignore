@@ -3,7 +3,7 @@ client/node_modules/
 server/node_modules/
 
 # Ignore builds
-client/build/
+client/dist/
 server/dist/
 
 # Ignore environment files
