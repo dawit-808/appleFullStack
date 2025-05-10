@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./YoutubeVideos.css";
 
 function YoutubeVideos() {
   const [videos, setVideos] = useState([]);
 
-  const API_KEY = "AIzaSyAb5gWlJBg62NqQBcXBJT1Ki9HCtmfJfmU";
+  const apiKey = import.meta.env.VITE_API_KEY;
   const channelId = "UCE_M8A5yxnLfW0KghEeajjw";
 
   useEffect(() => {
-    const dataFetcher = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=9&order=date&key=${API_KEY}`;
+    const dataFetcher = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=9&order=date&key=${apiKey}`;
 
     fetch(dataFetcher)
       .then((res) => res.json())
@@ -19,17 +19,6 @@ function YoutubeVideos() {
         console.error(error);
       });
   }, []);
-
-  // useEffect(() => {
-  //   fetch("/data.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setVideos(data.items);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // }, []);
 
   return (
     <>

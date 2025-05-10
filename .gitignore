@@ -7,7 +7,7 @@ client/build/
 server/dist/
 
 # Ignore environment files
-*.env
+*client/.env
 
 # Ignore logs
 *.log
