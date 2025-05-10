@@ -200,7 +200,6 @@ app.get("/iphone/:id", (req, res) => {
     if (err) return console.log(err.message);
     if (results.length === 0) return console.log("Product not found");
     res.json(results[0]);
-    console.log(results);
   });
 });
 
