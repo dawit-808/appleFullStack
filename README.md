@@ -44,6 +44,7 @@ cd appleFullstack
 
 2. Set up the Backend
 
+> ⚠️ This project uses your **local MySQL database** and `.env` file for configuration.
 cd server
 npm install
 
