@@ -14,7 +14,7 @@
 
 - ⚙️ Express.js
 - 🧮 MySQL database
-- 📦 Axios
+- ⚙️ YouTube API
 - 📱 Responsive frontend with React
 
 ---
