@@ -1,4 +1,4 @@
-# 🍏 appleFullstack
+# appleFullstack
 
 **appleFullstack** is a full-stack web application built with React, Node.js and MySQL. It provides an API integration and responsive UI.
 
