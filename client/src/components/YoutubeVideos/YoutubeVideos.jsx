@@ -25,7 +25,7 @@ function YoutubeVideos() {
       <div className="container mt-5">
         <h2 className="mb-4 text-center fw-bold">Latest Videos</h2>
         <div className="row">
-          {videos.map((video) => (
+          {videos?.map((video) => (
             <div className="col-md-4 mb-4" key={video.id.videoId}>
               <a
                 href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
