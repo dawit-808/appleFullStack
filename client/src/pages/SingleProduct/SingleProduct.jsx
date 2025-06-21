@@ -8,7 +8,7 @@ function SingleProduct() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/iphone/${id}`)
+    fetch(`http://localhost:5500/iphone/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.log(err));
