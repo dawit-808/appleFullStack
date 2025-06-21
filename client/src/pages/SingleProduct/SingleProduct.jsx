@@ -8,7 +8,7 @@ function SingleProduct() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5500/iphone/${id}`)
+    fetch(`https://applefullstack.onrender.com/iphone/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.log(err));
